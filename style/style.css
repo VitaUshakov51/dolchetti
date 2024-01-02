@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
 }
@@ -446,6 +447,10 @@ html {
 
 .vacancies__image {
     max-width: 626px;
+}
+
+.vacancies__advantages-mobile-img {
+    display: none;
 }
 
 .vacancies__image img {
@@ -1012,12 +1017,56 @@ html {
 }
 
 @media (max-width: 503px) {
+
+    .hero__body {
+        padding: 140px 0 248px 0;
+    }
+
+    .hero__subtitle {
+        font-size: 13px;
+    }
+
+    .hero__title {
+        font-size: 38px;
+    }
+
     .title {
         font-size: 28px;
     }
 
     .crumb {
         font-size: 13px;
+    }
+
+    .advantages {
+        padding: 80px 0;
+    }
+
+    .advantages__items {
+        gap: 10px;
+    }
+
+    .advantages__item {
+        padding: 10px;
+    }
+
+    .advantages__item-icon {
+        width: 28px;
+    }
+    .advantages__item-icon img {
+        width: 100%;
+    }
+
+    .advantages__item-text {
+        font-size: 10px;
+    }
+
+    .about {
+        margin-bottom: 80px;
+    }
+
+    .services {
+        margin-bottom: 80px;
     }
 
     .services__left-wrapper {
@@ -1036,5 +1085,57 @@ html {
 
     .services__item--mini, .services__item--big, .services__item--medium {
         height: inherit;
+    }
+
+    .vacancies {
+        margin-bottom: 80px;
+    }
+
+    .vacancies__advantages-mobile-img {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .vacancies__advantages-mobile-img img {
+        width: 100%;
+    }
+
+    .vacancies__image {
+        display: none;
+    }
+
+    .vacancies__variable {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 5px;
+        max-width: 298px
+    }
+
+    .vacancies__variable:not(:last-child) {
+        max-width: 228px;
+    }
+
+    .vacancies__variable-title {
+        font-size: 20px;
+    }
+
+
+    .contacts {
+        margin-bottom: 80px;
+    }
+
+    .contacts__info-heading {
+        font-size: 20px;
+    }
+
+    .contacts__info-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .connect {
+        padding: 80px 0 0 0;
+        background-position: center;
     }
 }
