@@ -1,4 +1,10 @@
 (function () {
+
+    new WOW({
+            animateClass: 'animate__animated',
+        }
+    ).init();
+
     const burger = document.getElementById('burger');
     const mobileContainer = document.getElementById('mobileContainer');
     const heroContent = document.getElementById('heroContent');
