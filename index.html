@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style/style.css">
     
 </head>
-<body>
+<body id="body" class="">
 <div class="wrapper">
     <section class="hero">
         <header class="header">
@@ -39,11 +39,38 @@
                     <a href="#" class="header__numbers-link">+7 (495) 142-42-60</a>
                     <a href="#" class="header__numbers-link">+7 (985) 119-31-14</a>
                 </div>
+                <a href="#" id="burger" class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class="container header__mobile-container " id="mobileContainer">
+                <nav class="header__mobile-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#vacancies" class="nav-link">Вакансии</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contacts" class="nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__mobile-numbers">
+                    <a href="#" class="header__mobile-numbers-link nav-link">+7 (495) 142-42-60</a>
+                    <a href="#" class="header__mobile-numbers-link nav-link">+7 (985) 119-31-14</a>
+                </div>
             </div>
         </header>
         <div class="hero__body">
             <div class="container">
-                <div class="hero__content">
+                <div class="hero__content" id="heroContent">
                     <div class="hero__subtitle">5 км от МКАДа Южное Бутово</div>
                     <div class="hero__decor-element decor-element">
                         <img src="images/hero-decor-el.svg" alt="line">
