@@ -77,7 +77,7 @@
                         <img src="images/hero-decor-el.svg" alt="line">
                     </div>
                     <h1 class="hero__title">Ответственное хранение товаров для вашего бизнеса в Москве</h1>
-                    <a href="#" class="hero__button button">Оставить заявку</a>
+                    <a href="#form" class="hero__button button">Оставить заявку</a>
                 </div>
             </div>
         </div>
@@ -245,7 +245,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="services__button button">Оставить заявку</a>
+                    <a href="#form" class="services__button button">Оставить заявку</a>
                 </div>
             </div>
         </div>
@@ -348,28 +348,29 @@
         <div class="container connect__container">
             <div class="connect__actions">
                 <div class="connect__heading">
-                    <div class="connect__crumb crumb">Заполните форму</div>
+                    <div class="connect__crumb crumb" id="form">Заполните форму</div>
                     <div class="connect__decor-element decor-element">
                         <img src="images/advantages-decor-el.svg" alt="line">
                     </div>
                     <div class="connect__title title">Получите подробную консультацию нашего специалиста</div>
-                    <div class="connect__form wow animate__fadeInUp">
+                    <form action="sender.php" method="post" class="connect__form wow animate__fadeInUp">
                         <div class="connect__form-item">
-                            <input class="connect__form-input" placeholder="Имя" type="text">
+                            <input class="connect__form-input" id="name" name="name" placeholder="Имя" type="text">
                         </div>
                         <div class="connect__form-item">
-                            <input class="connect__form-input" placeholder="Телефон" type="tel">
+                            <input class="connect__form-input" id="phone" name="phone" placeholder="Телефон" type="text">
                         </div>
                         <div class="connect__form-item">
-                            <input class="connect__form-input" placeholder="Почта" type="email">
+                            <input class="connect__form-input" id="email" name="email" placeholder="Почта" type="email">
                         </div>
                         <div class="connect__form-item">
                            <div class="connect__form-policy">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a> </div>
                         </div>
                         <div class="connect__form-item">
-                            <button class="connect__form-button button" disabled>Оставить заявку</button>
+                            <button class="connect__form-button button" id="submitButton" type="submit" disabled >Оставить заявку</button>
                         </div>
-                    </div>
+                        <div class="connect__form-send" id="message">Заявка успешно отправлена, скоро мы с вами свяжемся. </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -404,6 +405,11 @@
     </section>
 </div>
 </body>
+<script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
 <script src="scripts/wow.min.js"></script>
+<script src="scripts/imask.js"></script>
 <script src="scripts/index.js"></script>
 </html>

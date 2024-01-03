@@ -667,6 +667,18 @@ html {
     width: 100%;
 }
 
+.connect__form-send {
+    opacity: 0;
+    color: #FFF;
+    font-family: Montserrat,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 120%; /* 15.6px */
+    padding: 10px;
+    background-color: rgba(0, 128, 0, 0.71);
+    border-radius: 8px;
+}
+
 /*============footer=========================*/
 
 .footer {
@@ -1136,5 +1148,9 @@ html {
     .connect {
         padding: 80px 0 0 0;
         background-position: center;
+    }
+
+    .connect__actions {
+        margin-bottom: 40px;
     }
 }
